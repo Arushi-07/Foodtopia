@@ -1,0 +1,261 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/coralBack"
+    android:weightSum="8"
+    android:paddingTop="20dp">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@color/black"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:src="@color/FerrariRed"
+
+
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="5"
+
+        >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+       />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/camera"
+                android:id="@+id/camera"
+                android:onClick="onSelectImageClick"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+    <com.phoenix.foodtopia.Helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/username"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/FerrariRed"/>
+   <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:onClick="onSelectImageClick"
+        android:id="@+id/buttonPanel"
+        android:text="Upload Photo"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="1.5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.38"
+            android:orientation="horizontal">
+            <com.phoenix.foodtopia.Helper.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Update Work Address"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="@drawable/shade"
+                android:layout_margin="10dp"
+                android:id="@+id/workAddr"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rightarrow"
+                android:layout_marginRight="10dp"
+                android:id="@+id/workArrow"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.28"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:id="@+id/updateWorkAddrLayout"
+            android:visibility="gone"
+            android:paddingLeft="20dp">
+            <com.phoenix.foodtopia.Helper.CustomEditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:id="@+id/updateWorkAddr"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/save"
+                android:id="@+id/saveWorkAddr"
+                android:padding="15dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.38">
+            <com.phoenix.foodtopia.Helper.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Update Home Address"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="@drawable/shade"
+                android:layout_margin="10dp"
+                android:id="@+id/homeaddr"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rightarrow"
+                android:layout_marginRight="10dp"
+                android:id="@+id/homeArrow"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.28"
+            android:visibility="gone"
+            android:id="@+id/updateHomeAddrLayout"
+            android:weightSum="9"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <com.phoenix.foodtopia.Helper.CustomEditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/updateHomeAddr"
+                android:layout_weight="8"
+
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/saveHomeAddr"
+                android:src="@drawable/save"
+                android:padding="15dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.38">
+            <com.phoenix.foodtopia.Helper.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Preferences"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="@drawable/shade"
+                android:layout_margin="10dp"
+                android:id="@+id/pref"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rightarrow"
+                android:layout_marginRight="10dp"
+                android:id="@+id/prefarrow"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.28"
+            android:visibility="gone"
+            android:id="@+id/updatePref"
+            android:weightSum="9"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <com.phoenix.foodtopia.Helper.CustomEditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/updatePrefA"
+                android:layout_weight="8"
+
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/savePref"
+                android:src="@drawable/save"
+                android:padding="15dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phoenix.foodtopia.Fragments.BreakfastFragment"
+    android:background="@drawable/snacks"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucentImage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_marginBottom="?attr/actionBarSize"
+                android:paddingTop="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:background="@color/translucent"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:id="@+id/snacksTime"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_horizontal"
+
+
+                        >
+
+
+                        <com.phoenix.foodtopia.Helper.CustomRadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:id="@+id/snacks1"
+                            android:text="Snacks 4pm - 5 pm"
+                            />
+                        <com.phoenix.foodtopia.Helper.CustomRadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:id="@+id/snacks2"
+                            android:text="Snacks 5 pm - 6 pm"
+                            />
+                        <com.phoenix.foodtopia.Helper.CustomRadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:id="@+id/snacks3"
+                            android:text="Snacks 6 pm - 7 pm"/>
+
+
+
+
+                    </RadioGroup>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Place : "
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="10dp"/>
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp">
+
+                        <com.phoenix.foodtopia.Helper.CustomRadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1"
+                            android:id="@+id/breakfastWork"
+                            android:text="Work"
+                           />
+
+                        <com.phoenix.foodtopia.Helper.CustomRadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1"
+                            android:id="@+id/breakfastHome"
+                            android:text="Home"
+                            />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Proceed"
+                        android:id="@+id/proceed"
+                        android:background="@drawable/roundedbutton"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+

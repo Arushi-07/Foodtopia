@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10.5"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:background="@color/splashTranslucent2">
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clipToPadding="false"
+
+            >
+            <!-- <de.hdodenhof.circleimageview.CircleImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="0.7"
+                 android:src="@color/white"/>-->
+            <!-- <RelativeLayout
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 android:background="@color/white"
+                 android:elevation="50dp"/>
+                 >-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/logo"
+                android:text="FoodTopia"
+                android:textColor="@color/black"
+                android:textSize="75dp"
+                tools:fontFamily="cursive"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                />
+
+        </RelativeLayout>
+
+    <com.phoenix.foodtopia.Helper.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hintColor"
+        android:backgroundTint="@color/underline"
+        android:layout_marginBottom="10dp"/>
+    <com.phoenix.foodtopia.Helper.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="E Mail"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hintColor"
+        android:backgroundTint="@color/underline"
+        android:layout_marginBottom="10dp"/>
+    <com.phoenix.foodtopia.Helper.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Home Address"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hintColor"
+        android:backgroundTint="@color/underline"
+        android:layout_marginBottom="10dp"/>
+        <com.phoenix.foodtopia.Helper.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Work Address"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor"
+            android:backgroundTint="@color/underline"
+            android:layout_marginBottom="10dp"/>
+        <com.phoenix.foodtopia.Helper.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Peferences"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor"
+            android:backgroundTint="@color/underline"
+            android:layout_marginBottom="10dp"/>
+    <com.phoenix.foodtopia.Helper.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hintColor"
+        android:backgroundTint="@color/underline"
+        android:layout_marginBottom="10dp"/>
+    <com.phoenix.foodtopia.Helper.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Confirm Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hintColor"
+        android:backgroundTint="@color/underline"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/roundedbutton"
+            android:text="SIGN UP"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:id="@+id/signUp"
+            android:textColor="@color/red"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

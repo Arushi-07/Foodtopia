@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="translucent">#b1ffffff</color>
+    <color name="translucentImage">#4cffffff</color>
+    <color name="translucentImage2">#7fffffff</color>
+    <color name="red">#FF4951</color>
+    <color name="splashTranslucent">#67ffe8c7</color>
+    <color name="splashTranslucent2">#c1ffe8c7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="underline">#FFFFFF</color>
+    <color name="fbloginColor">#444B9B</color>
+    <color name="homeBlue">#444B9B</color>
+    <color name="hintColor">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="tintColor">#e01b3fbb</color>
+    <color name="splash_background">#a8ff4951</color>
+    <color name="lightBlue">#3090C7</color>
+    <color name="darkGrey">#000000</color>
+    <color name="lightGrey">#000000</color>
+    <color name="DarkRed">#000000</color>
+    <color name="SapphireBlue">#2554C7</color>
+    <color name="FerrariRed">#F70D1A</color>
+    <color name="lightestGrey">#D1D0CE</color>
+    <color name="turquoise">#3EA99F</color>
+    <color name="redText">#FF6861</color>
+    <color name="lighestBlue">#bddfeb</color>
+    <color name="darkPurple">#423752</color>
+    <color name="buttonTint">#C56F59</color>
+    <color name="coralBack">#FF7F50</color>
+    <color name="coralt">#c2ff7f50</color>
+
+</resources>

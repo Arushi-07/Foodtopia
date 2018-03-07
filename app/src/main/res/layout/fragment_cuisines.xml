@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:background="@color/splashTranslucent2"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/transparent"
+            android:layout_marginTop="15dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Select Cuisine"
+                    android:gravity="center"
+                    android:textSize="40dp"
+                    android:fontFamily="cursive"
+                    android:textColor="@color/black"
+                    android:id="@+id/select"
+                    android:layout_centerHorizontal="true"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="30"
+                    android:shadowColor="@color/FerrariRed"
+                    android:textStyle="bold"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@color/black"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/menucoral"
+                    android:layout_marginRight="20dp"
+                    android:padding="2dp"
+                    android:id="@+id/userProfile"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"></LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:id="@+id/breakfastTime"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/translucent"
+
+                >
+
+
+                <com.phoenix.foodtopia.Helper.CustomRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:id="@+id/indian"
+                    android:text="Indian"/>
+                <com.phoenix.foodtopia.Helper.CustomRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:id="@+id/american"
+                    android:text="American"/>
+                <com.phoenix.foodtopia.Helper.CustomRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:id="@+id/japanese"
+                    android:text="Japanese"/>
+                <com.phoenix.foodtopia.Helper.CustomRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:id="@+id/chinese"
+                    android:text="Chinese"/>
+
+                <com.phoenix.foodtopia.Helper.CustomRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:id="@+id/vietnamese"
+                    android:text="Vietnamese"/>
+
+
+
+
+
+            </RadioGroup>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proceed"
+                android:id="@+id/proceed"
+                android:background="@drawable/roundedbutton"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
